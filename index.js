@@ -6,28 +6,33 @@ const userInputString = prompt(
   "Please enter some integers separated by commas.",
   "1,2,3,4,5"
 );
+const num = [1,2,3,4,5]
+console.log(num)
 
 // Split the string of numbers into an array of strings.
-const stringArray = userInputString.split(",");
+const stringArray = userInputString.split("0,2");{
+console.log(stringArray[1])
+}
 
 // Convert the array of strings into an array of numbers.
-const numbers = [];
+const numbers = [number];
 for (let i = 0; i < stringArray.length; i++) {
   const str = stringArray[i];
   const number = parseInt(str);
-  numbers.push(number);
+  numbers.push(4);
+  console.log(i)
 }
 
 // Peform some calculations on the numbers.
 console.log(numbers);
-console.log(`You have given ${getLength(numbers)} numbers.`);
-console.log(`The sum of your numbers is ${getSum(numbers)}.`);
-console.log(`The mean of your numbers is ${getMean(numbers)}.`);
-console.log(`The smallest of your numbers is ${getMin(numbers)}.`);
-console.log(`The largest of your numbers is ${getMax(numbers)}.`);
-console.log(`The range of your numbers is ${getRange(numbers)}.`);
-console.log(`The even numbers you gave are ${getEvens(numbers)}.`);
-console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
+console.log(`You have given ${getLength(numbers: number[])} numbers.`);
+console.log(`The sum of your numbers is ${getSum(numbers: number[])}.`);
+console.log(`The mean of your numbers is ${getMean(numbers: number[])}.`);
+console.log(`The smallest of your numbers is ${getMin(numbers: number[])}.`);
+console.log(`The largest of your numbers is ${getMax(numbers: number[])}.`);
+console.log(`The range of your numbers is ${getRange(numbers: number[])}.`);
+console.log(`The even numbers you gave are ${getEvens(numbers: number[])}.`);
+console.log(`The odd numbers you gave are ${getOdds(numbers: number[-])}.`);
 
 // === EDIT THE CODE BELOW ===
 // Complete the functions below to make the program work!
